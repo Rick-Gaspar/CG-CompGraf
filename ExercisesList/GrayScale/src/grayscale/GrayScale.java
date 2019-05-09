@@ -21,7 +21,7 @@ public class GrayScale {
             int b = corPixel.getBlue();
         return (int) ((r + g + b)/3);
     }
-    
+    /* Função não é necessária
     public static void imageToGrayScaleNormal(BufferedImage image) throws IOException{
             BufferedImage imageGrayNormal = new BufferedImage(image.getWidth(), image.getHeight(),BufferedImage.TYPE_BYTE_GRAY);  
             Graphics g = imageGrayNormal.getGraphics();  
@@ -32,7 +32,7 @@ public class GrayScale {
             File out = new File(outPut);
             ImageIO.write(imageGrayNormal,"JPG",out); 
     }
-    
+    */
     public static void imageToGrayScaleAverage(BufferedImage in) throws IOException {
                 int x =0;
                 int z =0;
@@ -55,7 +55,7 @@ public class GrayScale {
             BufferedImage img = ImageIO.read(f);
             
             //Escala de cinza padrão
-            imageToGrayScaleNormal(img);
+            //imageToGrayScaleNormal(img);
             
             //Escala de cinza através da média
             //imageToGrayScaleAverage(img);
