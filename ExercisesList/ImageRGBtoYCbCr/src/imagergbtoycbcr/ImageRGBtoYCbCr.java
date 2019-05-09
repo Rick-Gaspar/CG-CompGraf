@@ -63,11 +63,11 @@ public class ImageRGBtoYCbCr {
                     
                 }
             }
-            File out = new File("A://Y.jpg");
+            File out = new File("C:\\Users\\henri\\Desktop\\UENP\\Y.jpg");
             ImageIO.write(Y, "jpg", out);
-            out = new File("A://Cb.jpg");
+            out = new File("C:\\Users\\henri\\Desktop\\UENP\\Cb.jpg");
             ImageIO.write(Cb, "jpg", out);
-            out = new File("A://Cr.jpg");
+            out = new File("C:\\Users\\henri\\Desktop\\UENP\\Cr.jpg");
             ImageIO.write(Cr, "jpg", out);
         } catch (Exception ex) {
             System.out.println("Erro: " +ex.getMessage());

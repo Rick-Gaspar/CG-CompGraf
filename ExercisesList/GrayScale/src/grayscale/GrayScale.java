@@ -11,7 +11,7 @@ import javax.imageio.ImageIO;
 
 /**
  *
- * @author bertonha
+ * @author Henrique Gaspar
  */
 public class GrayScale {
 
@@ -28,7 +28,7 @@ public class GrayScale {
             g.drawImage(image, 0, 0, null);  
             g.dispose();
             
-            String outPut = "C:\\Users\\berto\\OneDrive\\Área de Trabalho\\UENP - 2019\\Computação Gráfica\\ponteGrayNormal.jpg";
+            String outPut = "C:\\Users\\henri\\Desktop\\U2 The Joshua Tree\\telaoN.jpg";
             File out = new File(outPut);
             ImageIO.write(imageGrayNormal,"JPG",out); 
     }
@@ -44,14 +44,14 @@ public class GrayScale {
                         newImageGray.setRGB(x, z, new Color(media, media, media).getRGB());
                     }
                 }    
-                String outPut = "C:\\Users\\berto\\OneDrive\\Área de Trabalho\\UENP - 2019\\Computação Gráfica\\ponteGray.jpg";
+                String outPut = "C:\\Users\\henri\\Desktop\\U2 The Joshua Tree\\telaoCinza.jpg";
 		File out = new File(outPut);
                 ImageIO.write(newImageGray,"JPG",out);          
 	}
    
     public static void main(String[] args) {
         try{
-            File f = new File("C:\\Users\\berto\\OneDrive\\Área de Trabalho\\UENP - 2019\\Computação Gráfica\\ponte.jpg");
+            File f = new File("C:\\Users\\henri\\Desktop\\U2 The Joshua Tree\\telao.jpg");
             BufferedImage img = ImageIO.read(f);
             
             //Escala de cinza padrão
@@ -61,7 +61,7 @@ public class GrayScale {
             //imageToGrayScaleAverage(img);
                 
         }catch (Exception ex){
-            System.out.println("Isso aqui impediu sua felicidade: " + ex.getMessage());
+            System.out.println("Erro " + ex.getMessage());
         }
     }
     

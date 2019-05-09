@@ -8,7 +8,7 @@ import javax.imageio.ImageIO;
 
 /**
  *
- * @author bertonha
+ * @author Henrique Gaspar
  */
 public class Hsi {
 
@@ -60,11 +60,11 @@ public class Hsi {
             }
         }
         
-         File out = new File("C:\\Users\\berto\\OneDrive\\Área de Trabalho\\UENP - 2019\\Computação Gráfica\\H.jpg");
+         File out = new File("C:\\Users\\henri\\Desktop\\U2 The Joshua Tree\\a.jpg");
                         ImageIO.write(redImage, "JPG", out);
-                    out = new File("C:\\Users\\berto\\OneDrive\\Área de Trabalho\\UENP - 2019\\Computação Gráfica\\S.jpg");
+                    out = new File("C:\\Users\\henri\\Desktop\\U2 The Joshua Tree\\b.jpg");
                         ImageIO.write(greenImage, "JPG", out);
-                    out = new File("C:\\Users\\berto\\OneDrive\\Área de Trabalho\\UENP - 2019\\Computação Gráfica\\I.jpg");
+                    out = new File("C:\\Users\\henri\\Desktop\\U2 The Joshua Tree\\c.jpg");
                         ImageIO.write(blueImage, "JPG", out);
         
     }
@@ -72,13 +72,13 @@ public class Hsi {
     
     public static void main(String[] args) {
         try{
-            File f = new File("C:\\Users\\berto\\OneDrive\\Área de Trabalho\\UENP - 2019\\Computação Gráfica\\ponte.jpg");
+            File f = new File("C:\\Users\\henri\\Desktop\\U2 The Joshua Tree\\telao.jpg");
             BufferedImage img = ImageIO.read(f);
             
             executionHsi(img); 
                 
         }catch (Exception ex){
-            System.out.println("Isso aqui impediu sua felicidade: " + ex.getMessage());
+            System.out.println("Erro: " + ex.getMessage());
         }
     }
     

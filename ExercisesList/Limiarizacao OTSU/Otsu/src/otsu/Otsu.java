@@ -8,7 +8,7 @@ import javax.imageio.ImageIO;
 
 /**
  *
- * @author bertonha
+ * @author Henrique Gaspar
  */
 public class Otsu {
     
@@ -41,7 +41,7 @@ public class Otsu {
             }
         }
         
-        File out = new File("C:\\Users\\berto\\OneDrive\\Área de Trabalho\\UENP - 2019\\Computação Gráfica\\Otsu.jpg");
+        File out = new File("C:\\Users\\henri\\Desktop\\UENP\\teste.jpg");
             ImageIO.write(finalImage,"JPG", out);
     }
     
@@ -50,13 +50,13 @@ public class Otsu {
      */
     public static void main(String[] args) {
         try{
-            File f = new File("C:\\Users\\berto\\OneDrive\\Área de Trabalho\\UENP - 2019\\Computação Gráfica\\ponte.jpg");
+            File f = new File("C:\\Users\\henri\\Desktop\\U2 The Joshua Tree\\telao.jpg");
             BufferedImage img = ImageIO.read(f);
             
             executionOtsu(img); 
                 
         }catch (Exception ex){
-            System.out.println("Isso aqui impediu sua felicidade: " + ex.getMessage());
+            System.out.println("Erro: " + ex.getMessage());
         }
     }
     
